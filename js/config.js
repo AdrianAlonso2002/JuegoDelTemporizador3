@@ -605,7 +605,7 @@ function checkPassword5() {
         Swal.fire({
             icon: 'error',
             title: 'Contraseña Incorrecta',
-            text: 'Revisa las imagenes, es fácil',
+            text: 'Te quiero amor, pero no',
             confirmButtonText: 'Jo',
         });
     }
@@ -902,7 +902,7 @@ function checkPassword11() {
         Swal.fire({
             icon: 'error',
             title: 'Contraseña Incorrecta',
-            text: 'Tendrás que volver a intentarlo',
+            text: 'Que porro, no?',
             confirmButtonText: 'Jo',
         });
     }
@@ -954,7 +954,7 @@ function checkPassword12() {
         Swal.fire({
             icon: 'error',
             title: 'Contraseña Incorrecta',
-            text: '¿Qué pruebas? Tienes que ganar a Adri!',
+            text: 'Tú sabrás',
             confirmButtonText: 'Jo',
         });
     }

@@ -1,0 +1,179 @@
+body {
+    background-image: url("../img/mesa3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 10px auto 10px auto;
+    width: 100%;
+    height: calc(100vh - 17px);
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1px;
+}
+
+.carj1,
+.carj2 {
+    width: 90px; 
+}
+
+.carj {
+    width: 150px; 
+}
+
+.divcarta1,
+.divflecha1,
+.divcartajuego,
+.divflecha2,
+.divcarta2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.divcarta1,
+.divcarta2 {
+    padding: 20px;
+}
+
+.letra {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.letra2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.flecha {
+    visibility: hidden;
+}
+
+.flechaw {
+    width: 30px;
+}
+
+@media(max-width: 1000px) {
+
+    .carj1,
+    .carj2 {
+        width: 180px; 
+    }
+    
+    .carj {
+        width: 250px; 
+    }
+    
+    
+    .letra {
+        font-size: 50px;
+    }
+
+    .letra2 {
+        font-size: 40px;
+    }
+
+}
+
+@media(max-width: 800px) {
+
+    .carj1,
+    .carj2 {
+        width: 150px; 
+    }
+    
+    .carj {
+        width: 220px; 
+    }
+    
+    
+    .letra {
+        font-size: 50px;
+    }
+
+    .letra2 {
+        font-size: 40px;
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .carj1,
+    .carj2 {
+        width: 100px; 
+    }
+    
+    .carj {
+        width: 170px; 
+    }
+    
+    
+    .letra {
+        font-size: 20px;
+    }
+
+    .letra2 {
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    .carj1,
+    .carj2 {
+        width: 100px; 
+    }
+    
+    .carj {
+        width: 160px; 
+    }
+    
+    
+    .letra {
+        font-size: 20px;
+    }
+
+    .letra2 {
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width: 400px) {
+
+    .carj1,
+    .carj2 {
+        width: 90px; 
+    }
+    
+    .carj {
+        width: 150px; 
+    }
+    
+    
+    .letra {
+        font-size: 20px;
+    }
+
+    .letra2 {
+        font-size: 20px;
+    }
+
+}

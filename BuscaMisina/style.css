@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    background: #222;
+}
+.image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    transition: transform 0.1s;
+}
+.target {
+    z-index: 0;
+}
+#start-button {
+    height: 50vh;          /* Opcional: para ocupar toda la pantalla */
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background-color: #0e1135;
+    color: white;
+}
+#start-text {
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/crono3.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../img/crono3.png">
+    <title>BuscaMisina</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+            background: #222;
+        }
+        .image {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            z-index: 1;
+            transition: transform 0.1s;
+        }
+        .target {
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <audio id="wanted" loop>
+         <source src="sonido/wanted.mp3" type="audio/mpeg">
+         Tu navegador no soporta el elemento de audio.
+    </audio>
+    <button id="start-button">Buscar a Misina</button>
+    <p id="start-text">¡Encuentra al gato pardo!</p>
+    <script type="text/javascript" src="js/config.js"></script>
+</body>
+</html>

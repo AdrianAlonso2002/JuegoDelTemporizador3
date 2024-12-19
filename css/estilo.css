@@ -1,0 +1,303 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background-color: #8d5fe4;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+/* Cambio de color al pasar el cursor */
+button:hover {
+    background-color: #6a35cc;
+}
+
+#timer {
+    font-size: 3em;
+}
+
+#imgtimer {
+    width: 60px;
+}
+
+#imgtimer2 {
+    width: 90px;
+}
+
+#vidas img {
+    width: 60px;
+}
+
+#passwords {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+#passwords div{
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 7 - 1px);
+    margin: 3px; 
+    margin-left: 10px;
+}
+
+#passwords input[type="password"] {
+    margin-right: 2px;
+    color: white;
+}
+
+#passwords img {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+#passwords div input[type="password"] {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+
+}
+
+input[type="password"] {
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+}
+
+#images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+
+#images div {
+    max-width: auto;
+}
+
+#images img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#images p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+#cajas {
+    background-color: #c446ff23;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#caja1,#caja2,#caja3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33.33% - 20px);
+    margin-top: 20px;
+}
+
+#caja1 {
+    background-color: #865a0842;
+}
+
+#caja2 {
+    background-color: #8181813d;
+}
+
+#caja3 {
+    background-color: #ebd45349;
+}
+
+#cajaImagen1,#cajaImagen2,#cajaImagen3 {
+    width: 300px;
+}
+
+#dial {
+    font-size: 1.5em;
+}
+
+#caja button {
+    margin-top: 10px;
+}
+
+#botones-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#botones-container button {
+    margin: 0 5px;
+}
+
+#diales-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+#diales-container div {
+    margin: 0 5px;
+}
+
+.correcto {
+    color: green;
+}
+
+.marcado {
+    color: blue;
+}
+
+.incorrecto {
+    color: red;
+}
+
+.my-popup-class {
+    max-width: 300px; 
+    width: auto !important;
+}
+
+@media(max-width: 1000px) {
+    #images img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    #timer {
+        font-size: 30px;
+    }
+
+    #imgtimer {
+        width: 40px;
+    }
+
+    #vidas img {
+        width: 40px;
+    }
+
+    #cajaImagen {
+        width: 200px;
+    }
+
+    #passwords div{
+        width: calc(100% / 4 - 3px);
+        margin: 10px; 
+    }
+
+    #caja1,#caja2,#caja3 {
+        width: calc(99.66% - 20px);
+    }
+}
+
+@media(max-width: 500px) {
+
+    #images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #images img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    #timer {
+        font-size: 25px;
+    }
+
+    #imgtimer {
+        width: 30px;
+    }
+
+    #vidas img {
+        width: 25px;
+    }
+
+    #cajaImagen {
+        width: 150px;
+    }
+
+    #passwords div{
+        width: calc(100% / 3 - 1px);
+        margin: 15px; 
+    }
+
+}
+
+.blackout {
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 1em;
+    pointer-events: none;
+    animation: fall linear;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}

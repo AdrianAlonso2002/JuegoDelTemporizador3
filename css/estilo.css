@@ -217,6 +217,10 @@ main {
         width: 40px;
     }
 
+    #imgtimer2 {
+        width: 40px;
+    }
+
     #vidas img {
         width: 40px;
     }
@@ -248,11 +252,15 @@ main {
     }
 
     #timer {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #imgtimer {
         width: 30px;
+    }
+
+    #imgtimer2 {
+        width: 50px;
     }
 
     #vidas img {
